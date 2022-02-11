@@ -2,13 +2,13 @@
 # Must be the same as `author` in `_config.yml`.
 # Change `author1` to your shortname.
 author1:
-  name:              DaeIn Lee
-  email:             daein0lee@gmail.com
+  name:              Mario van Rooij
+  email:             mariovanrooij@hotmail.com
 
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about:             |
-    HANA Core Developer at [SAP Labs Korea](https://www.sap.com/korea/about/labs-korea.html).<br>
+    Intelligent Imaging Thesis Intern at [TNO](https://www.tno.nl/).<br>
     Please check my [Resume][resume] to find out more about me!<br>
 
     [resume]: /resume/
@@ -25,10 +25,10 @@ author1:
   # Comment/uncommet to show/hide
   # Rearrange to change the order in which they appear
   social:
-    linkedin:        daein-lee-3b6ba9139
-    github:          lazyren
-    stackoverflow:   4294737
-    email:           lazy0ren@gmail.com
+    linkedin:        mario-van-rooij-94a311162
+    github:          Snoeprol
+    stackoverflow:   9903449
+    email:           mariovanrooij@hotmail.com
     # rss:             https://lazyren.github.io/feed.xml
     # facebook:        <username>
     # google:          <number>
