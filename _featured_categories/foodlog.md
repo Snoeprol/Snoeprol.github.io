@@ -1,10 +1,10 @@
 ---
 layout: list
 type: category
-title: Dev. Log
-slug: devlog
+title: Food log
+slug: foodlog
 sidebar: true
 order: 2
 description: >
-  Anything about development
+  Anything about nutrition
 ---
