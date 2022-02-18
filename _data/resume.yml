@@ -93,6 +93,17 @@ projects:
     url: "https://github.com/charelF/ABM"
     highlights:
       - "Web interface"
+  - title: "Density Functional Theory Project"
+    startDate: "2020-04-01"
+    endDate: "2020-06-30"
+    summary: "Investigating how silicon quantum dots absorb light when molecules are attached to them"
+    url: "https://github.com/Snoeprol/AvogadroMoleculeAttacher/tree/master/tests"
+    highlights:
+      - "Density Functional Theory calculations"
+      - "Writing OO python scripts"
+    buttons:
+    print: false
+    pdf: /assets/Scriptie.pdf
 # awards:
 #   - title: "Hanyang Academic Achievement Award"
 #     awarder: "Hanyang Univ."
