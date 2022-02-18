@@ -7,8 +7,7 @@ basics:
   website: "https://Snoeprol.github.io/"
   summary: >
     Hey! My name is Mario and I live in Amsterdam (Netherlands) <br>
-    I love solving problems using code<br>
-    I am confident that I can satisfy expectations of coworkers.
+    I love solving problems using code, reading about psychology and nutrition, and doing sports<br>
   # location:
   #   address: "2712 Broadway St"
   #   postalCode: "CA 94115"
@@ -57,6 +56,23 @@ work:
       expect a tour in which I assisted. This also gave me the chance to excite the younger public
       for physics.
 education:
+  - institution: "University of Amsterdam"
+    area: "Computational Science"
+    studyType: "Master"
+    startDate: "2020-08-01"
+    endDate: "2022-07-31"
+    gpa: "8.6"
+    courses:
+      -  "Complex System Simulation" 
+      -  "Numerical Algorithms"
+      -  "Agent-based Modelling"
+      -  "Evolutionary Computing"
+      -  "Large Scale Data Engineering" 
+      -  "Stochastic Simulation" 
+      -  "Scientific Computing"
+      -  "Advanced Numerical Methods in Many Body Physics" 
+      -  "Machine Learning for Physics and Astronomy"
+      -  "Programming Multi-core and Many-core Systems, Uncertainty Quantification"
   - institution: "University of Amsterdam"
     area: "Physics and Astronomy"
     studyType: "Bachelor"
