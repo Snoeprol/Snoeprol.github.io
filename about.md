@@ -24,7 +24,7 @@ Please check my [resume] if you wish to know more about me.
 _My motto to live by._
 {:.lead}
 
-> “We should try to cherish every day, and be actively grateful for live and the people surrounding us.”
+> “We should try to cherish every day, and be actively grateful for life and the people surrounding us.”
 
 ## Re-evaluate your work processes
 
