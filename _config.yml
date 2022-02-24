@@ -4,7 +4,7 @@
 # IMPORTANT: Set the URL of your site.
 # Set to https://<username>.github.io when hosting on GitHub Pages
 # (unless you are using a custom domain).
-url:                   https://LazyRen.github.io
+url:                   https://Snoeprol.github.io
 
 # IMPORTANT: Set The "base URL" of your site.
 # When your site sits in a subdirectory, set to /<name of directory>
@@ -20,20 +20,19 @@ baseurl:               ''
 
 # Language of your content in 2-letter code, e.g.: en, de.
 # You may also provide a location, e.g.: en-us, de_AT.
-lang:                  ko-KR, en-US
+lang:                  nl, en-US
 
 # The title of your blog. Used in the sidebar and the browser tab.
-title:                 Lazy Ren
+title:                 Mario van Rooij
 
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description:           >
-  Work Hard to be Lazy.
-  SW Engineer at Samsung Research.
+  Intelligent Imaging internist at TNO.
 
 # A shorter description for the sidebar.
 tagline:               >
-  Work Hard to be Lazy.
+  Intelligent Imaging internist at TNO
 
 # A list of keywords for your blog
 keywords:              []
@@ -41,13 +40,13 @@ keywords:              []
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
 # It also used by the `jekyll-seo-tag` plugin.
-logo:                  /assets/img/seattle.png
+logo:                  /assets/img/eagle-cloud-logo-template_166080-original.png
 
 # This should be the same author as first entry in `_data/authors.yml`.
 author:
   # Used by `jekyll-feed`:
-  name:                DaeIn Lee
-  email:               daein0lee@gmail.com
+  name:                Mario van Rooij
+  email:               mariovanrooij@hotmail.com
   picture:             /assets/img/seattle.png
   social:
     linkedin:          daein-lee-3b6ba9139

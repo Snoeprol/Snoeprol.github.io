@@ -43,8 +43,6 @@ based on the jekyll theme [Hydejack].
 
 <!-- Links -->
 [SAP Labs Korea]: https://www.sap.com/korea/about/labs-korea.html
-[Hanyang University]: https://www.hanyang.ac.kr/
-[heavy gamer]: https://steamcommunity.com/id/lazyren
 [resume]: /resume/
 [original post]: http://blog.vivekmahbubani.com/2007/03/work-hard-to-be-lazy.html
 [Hydejack]: https://hydejack.com

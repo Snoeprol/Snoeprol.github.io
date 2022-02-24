@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://lazyren.github.io/sitemap.xml
+Sitemap: https://snoeprol.github.io/sitemap.xml
