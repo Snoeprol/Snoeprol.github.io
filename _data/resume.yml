@@ -72,7 +72,8 @@ education:
       -  "Scientific Computing"
       -  "Advanced Numerical Methods in Many Body Physics" 
       -  "Machine Learning for Physics and Astronomy"
-      -  "Programming Multi-core and Many-core Systems, Uncertainty Quantification"
+      -  "Programming Multi-core and Many-core Systems"
+      -  "Uncertainty Quantification"
   - institution: "University of Amsterdam"
     area: "Physics and Astronomy"
     studyType: "Bachelor"
@@ -88,11 +89,15 @@ education:
       - "Theoretical Solid State Physics"
 
 projects:
-  - title: "Aging Globular Clusters"
-    startDate: "2019-09-01"
-    endDate: "2019-11-01"
-    summary: "Calculating the age of a cluster according to the hertzsprung-russell diagram"
-    url: "https://lazyren.github.io/tag-bwtree/"
+  - title: "Counting number of trees in the Netherlands"
+    startDate: "2021-10-01"
+    endDate: "2021-11-31"
+    summary: "Project in which we used a Graph Neural network to count the number of trees in the city"
+    url: "https://ram0nb.github.io/2021_LSDE"
+    highlights:
+      - "Implementing parallel jobs on AWS using Databricks"
+      - "Websit that shows where trees are mainly located in Amsterdam"
+      - "Implementing clustering algorithms to identify trees"
 
   - title: "Multi-threaded CPU and GPU differential heat equation."
     startDate: "2019-10-01"
@@ -120,6 +125,11 @@ projects:
     buttons:
     print: false
     pdf: /assets/Scriptie.pdf
+  
+  - title: "Aging Globular Clusters"
+    startDate: "2019-09-01"
+    endDate: "2019-11-01"
+    summary: "Calculating the age of a cluster according to the hertzsprung-russell diagram"
 # awards:
 #   - title: "Hanyang Academic Achievement Award"
 #     awarder: "Hanyang Univ."
