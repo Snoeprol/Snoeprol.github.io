@@ -24,16 +24,16 @@ basics:
 work:
   - company: "TNO"
     position: "Thesis Intern Intelligent Imaging"
-    website: "TNO.nl"
+    website: "https://TNO.nl"
     startDate: "2022-01-01"
     endDate: ""
     summary: >
       TNO is a cornerstone of Dutch technology. It works together with the government and companies to provide solutions in technical, as well as social domains.
-      Intelligent Imaging mainly ofcussed on smart use of computer vision.
+      Intelligent Imaging is mainly focussed on smart use of computer vision.
     highlights:
   - company: "University of Amsterdam"
     position: "Teaching Assistent"
-    website: "uva.nl/"
+    website: "https://uva.nl/"
     startDate: "2019-01-01"
     endDate: "2021-12-31"
     summary: >
