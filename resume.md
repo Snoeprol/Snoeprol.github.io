@@ -3,7 +3,7 @@ layout: resume
 title: Resume
 permalink: /resume/
 description: >
-  Hi, I'm Mario, currently interning at intelligent imaging (II) at TNO
+  Hi, I'm Mario, currently working as a Data Scientist at ABN AMRO
 hide_description: true
 sidebar: true
 order: 5

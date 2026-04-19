@@ -10,8 +10,8 @@ order: 1
 ## Hello, World!
 
 Hi, I'm **Mario van Rooij**, *a.k.a.* **Meerio**.<br>
-I'm currently doing my internship at **[TNO]**, and previously was a computational student of **[University of Amsterdam]**.<br>
-Please check my [resume] if you wish to know more about me.
+I'm currently a **Data Scientist at [ABN AMRO]**, and previously was a computational student of **[University of Amsterdam]**.<br>
+Please check my [resume] if you want to know more about me.
 
 ***
 
@@ -42,6 +42,7 @@ based on the jekyll theme [Hydejack].
 <!--author-->
 
 <!-- Links -->
+[ABN AMRO]: https://www.abnamro.com/
 [SAP Labs Korea]: https://www.sap.com/korea/about/labs-korea.html
 [resume]: /resume/
 [original post]: http://blog.vivekmahbubani.com/2007/03/work-hard-to-be-lazy.html

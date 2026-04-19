@@ -82,7 +82,7 @@
     </dd>
   {% endif %}
 
-  {% if basics.phone.size > 0 %}
+  {% if basics.phone and basics.phone.size > 0 %}
     <dt class="faded">
       <span class="{{ icons.phone | default:'icon-phone' }}" title="{{ strings.resume.phone | default:'Phone' }}"></span>
       <span class="sr-only">{{ strings.resume.phone | default:"Phone" }}</span>

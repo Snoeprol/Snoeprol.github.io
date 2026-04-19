@@ -1,9 +1,8 @@
 basics:
   name: "Mario van Rooij"
-  label: "Computational Scientist"
+  label: "Data Scientist"
   picture: /assets/img/1639945417598.png
   email: "mariovanrooij@hotmail.com"
-  phone: "(+31) 6-2898-2519"
   website: "https://Snoeprol.github.io/"
   summary: >
     Hey! My name is Mario and I live in Amsterdam (Netherlands) <br>
@@ -22,15 +21,21 @@ basics:
       username: "Mario van Rooij"
       url: "https://www.linkedin.com/in/mario-van-rooij-94a311162/"
 work:
+  - company: "ABN AMRO"
+    position: "Data Scientist"
+    website: "https://www.abnamro.com/"
+    summary: >
+      Building data-driven solutions and models for banking use cases.
+    highlights: []
   - company: "TNO"
     position: "Thesis Intern Intelligent Imaging"
     website: "https://TNO.nl"
     startDate: "2022-01-01"
-    endDate: ""
+    endDate: "2022-12-31"
     summary: >
       TNO is a cornerstone of Dutch technology. It works together with the government and companies to provide solutions in technical, as well as social domains.
       Intelligent Imaging is mainly focussed on smart use of computer vision.
-    highlights:
+    highlights: []
   - company: "University of Amsterdam"
     position: "Teaching Assistent"
     website: "https://uva.nl/"
@@ -122,9 +127,6 @@ projects:
     highlights:
       - "Density Functional Theory calculations"
       - "Writing OO python scripts"
-    buttons:
-    print: false
-    pdf: /assets/Scriptie.pdf
   
   - title: "Aging Globular Clusters"
     startDate: "2019-09-01"
