@@ -181,3 +181,11 @@ Compare **standing still** (arrivals keep the same ordering as emission) with **
 ![Stacked vertical wave arrivals: standing still vs toward at 2c](/assets/img/doppler/arrival_wavefronts_still_vs_2c.png)
 
 For the supersonic case, parts of the arrival sequence can run “backwards” relative to emission order, which is one way to think about why the perceived waveform can sound scrambled compared with what left the siren.
+
+### Code
+
+Run from the `scripts/` directory. You need **matplotlib**, **numpy**, **pydub**, and **ffmpeg** on your `PATH` for muxed video. The siren MP3 used for audio lives next to the script as `(MP3) DRIETONIGE SIRENE NEDERLANDSE AMBULANCE.mp3`.
+
+{% highlight python %}
+{% include code/generate_doppler_gifs.py %}
+{% endhighlight %}

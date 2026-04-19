@@ -64,7 +64,10 @@ def wave_color(te: float, t_color_max: float):
     return WAVE_CMAP(x)
 
 
-def draw_wave_age_legend(ax, x0: float, x1: float, y: float) -> None:
+def draw_wave_age_legend(
+    ax, x0: float, x1: float, y: float, *, show_sublabel: bool = True
+) -> None:
+    """Horizontal emission-age bar with labels (uses offset points so text is not placed in data units)."""
     n = 40
     xs = np.linspace(x0, x1, n + 1)
     for i in range(n):
@@ -77,9 +80,43 @@ def draw_wave_age_legend(ax, x0: float, x1: float, y: float) -> None:
             solid_capstyle="round",
             zorder=9,
         )
-    ax.text(x0, y + 0.12, "OLDER", color="#67E8F9", fontsize=8, weight="bold")
-    ax.text(x1 - 0.65, y + 0.12, "NEWER", color="#FDBA74", fontsize=8, weight="bold")
-    ax.text((x0 + x1) / 2 - 1.0, y - 0.17, "emission color", color=FG_MUTED, fontsize=7)
+    bar_left, bar_right = float(xs[0]), float(xs[-1])
+    ax.annotate(
+        "OLDER",
+        xy=(bar_left, y),
+        xytext=(0, 10),
+        textcoords="offset points",
+        ha="center",
+        va="bottom",
+        color="#67E8F9",
+        fontsize=8,
+        weight="bold",
+        zorder=10,
+    )
+    ax.annotate(
+        "NEWER",
+        xy=(bar_right, y),
+        xytext=(0, 10),
+        textcoords="offset points",
+        ha="center",
+        va="bottom",
+        color="#FDBA74",
+        fontsize=8,
+        weight="bold",
+        zorder=10,
+    )
+    if show_sublabel:
+        ax.annotate(
+            "emission color",
+            xy=((bar_left + bar_right) / 2, y),
+            xytext=(0, -12),
+            textcoords="offset points",
+            ha="center",
+            va="top",
+            color=FG_MUTED,
+            fontsize=7,
+            zorder=10,
+        )
 
 
 def repo_root() -> str:
@@ -481,18 +518,34 @@ def make_arrival_wavefronts_summary(
     t_color_max = max(float(t_emit[-1]), DT_EMIT)
     emitted_colors = [wave_color(float(te), t_color_max) for te in t_emit]
 
+    fig_h = 5.0 if len(scenarios) <= 2 else 7.0
     fig, axes = plt.subplots(
         len(scenarios),
         1,
-        figsize=(8.0, 4.6 if len(scenarios) <= 2 else 6.6),
+        figsize=(8.0, fig_h),
         dpi=DPI,
-        constrained_layout=True,
+        constrained_layout=False,
         sharex=False,
     )
     if len(scenarios) == 1:
         axes = [axes]
     fig.patch.set_facecolor(BG)
-    fig.suptitle(suptitle, fontsize=12, color=FG)
+    # Room above panels for title + color note; room below for bottom captions.
+    fig.subplots_adjust(left=0.11, right=0.97, top=0.82, bottom=0.10, hspace=0.42)
+    fig.suptitle(suptitle, fontsize=12, color=FG, y=0.97)
+    fig.text(
+        0.5,
+        0.905,
+        "Color scale (all panels): cyan = older emission → orange = newer emission",
+        ha="center",
+        va="top",
+        fontsize=8,
+        color=FG_MUTED,
+    )
+
+    # Vertical bands (axis coords): keep data in the middle; labels live in margins.
+    y_v0, y_v1 = 0.18, 0.62
+    y_emit = 0.74
 
     for ax, (scenario, label) in zip(axes, scenarios):
         style_axes_dark(ax)
@@ -508,7 +561,7 @@ def make_arrival_wavefronts_summary(
         colors_sorted = [wave_color(float(te), t_color_max) for te in emit_sorted]
 
         # Vertical "wavefronts" arriving at observer
-        ax.vlines(t_arr_sorted, 0.08, 0.72, colors=colors_sorted, linewidth=2.2, alpha=0.95)
+        ax.vlines(t_arr_sorted, y_v0, y_v1, colors=colors_sorted, linewidth=2.2, alpha=0.95)
 
         # Reference strip for emitted order (always OLDER -> NEWER)
         x0 = float(np.min(t_arr_sorted))
@@ -516,9 +569,30 @@ def make_arrival_wavefronts_summary(
         if x1 - x0 < 1e-6:
             x1 = x0 + 1.0
         xs = np.linspace(x0, x1, len(t_emit))
-        ax.scatter(xs, np.full_like(xs, 0.90), c=emitted_colors, s=20, marker="s")
-        ax.text(x0, 0.96, "emitted order", color=FG_MUTED, fontsize=8, va="top")
-        ax.text(x0, 0.03, "observed arrivals", color=FG_MUTED, fontsize=8, va="bottom")
+        ax.scatter(xs, np.full_like(xs, y_emit), c=emitted_colors, s=22, marker="s", zorder=5)
+
+        ax.text(
+            0.5,
+            0.895,
+            "emitted order (older → newer)",
+            transform=ax.transAxes,
+            ha="center",
+            va="bottom",
+            fontsize=8,
+            color=FG_MUTED,
+            clip_on=False,
+        )
+        ax.text(
+            0.5,
+            -0.075,
+            "observed arrivals (by observer time)",
+            transform=ax.transAxes,
+            ha="center",
+            va="top",
+            fontsize=8,
+            color=FG_MUTED,
+            clip_on=False,
+        )
 
         # Arrival order vs emission index order (order = argsort by arrival time).
         reversed_count = int(np.sum(np.diff(order) < 0))
@@ -545,12 +619,8 @@ def make_arrival_wavefronts_summary(
         )
 
         ax.grid(alpha=0.2, color=EDGE, axis="x")
-        ax.set_xlabel("Observer time", color=FG)
 
-    # Global color meaning
-    ax0 = axes[0]
-    x_lim = ax0.get_xlim()
-    draw_wave_age_legend(ax0, x_lim[0] + 0.08 * (x_lim[1] - x_lim[0]), x_lim[0] + 0.34 * (x_lim[1] - x_lim[0]), 0.80)
+    axes[-1].set_xlabel("Observer time", color=FG)
 
     fig.savefig(path)
     plt.close(fig)
