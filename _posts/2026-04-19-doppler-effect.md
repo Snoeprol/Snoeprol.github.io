@@ -182,10 +182,4 @@ Compare **standing still** (arrivals keep the same ordering as emission) with **
 
 For the supersonic case, parts of the arrival sequence can run “backwards” relative to emission order, which is one way to think about why the perceived waveform can sound scrambled compared with what left the siren.
 
-### Code
-
-Here is the script I used. Point it at **your own** siren (or any) MP3 by editing `SIREN_MP3` near the top of the file.
-
-{% highlight python %}
-{% include_relative _doppler_assets/generate_doppler_gifs.py %}
-{% endhighlight %}
+**Code:** [Python script for the figures and video (gist)](https://gist.github.com/Snoeprol/9f224c9e484e2925205c1a3151d46738).
