@@ -108,13 +108,10 @@ Now the ambulance approaches at exactly \(c\). All wavefronts emitted while appr
 
 Before scrolling, **stop and think for a second**: the ambulance now moves toward you *faster* than its own sound. What do the wavefronts look like, and — more interestingly — what do you actually *hear*?
 
-- Which waves reach you first: the ones emitted far away, or the ones emitted nearby?
-- The source is going from "barely heard" to "screaming past" — does the pitch go up, down, or something stranger?
-
 <div class="doppler-think">
   <p>Got a guess? Reveal the animation and the synced audio below.</p>
   <button class="doppler-reveal" type="button" data-target="reveal-toward-mach2">
-    <span>👀</span><span>Reveal the answer</span>
+    <span>Reveal the answer</span>
   </button>
 </div>
 
