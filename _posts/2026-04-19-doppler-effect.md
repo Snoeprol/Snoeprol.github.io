@@ -184,7 +184,7 @@ For the supersonic case, parts of the arrival sequence can run “backwards” r
 
 ### Code
 
-Run from the `scripts/` directory. You need **matplotlib**, **numpy**, **pydub**, and **ffmpeg** on your `PATH` for muxed video. The siren MP3 used for audio lives next to the script as `(MP3) DRIETONIGE SIRENE NEDERLANDSE AMBULANCE.mp3`.
+Here is the script I used. Point it at **your own** siren (or any) MP3 by editing `SIREN_MP3` near the top of the file.
 
 {% highlight python %}
 {% include_relative _doppler_assets/generate_doppler_gifs.py %}

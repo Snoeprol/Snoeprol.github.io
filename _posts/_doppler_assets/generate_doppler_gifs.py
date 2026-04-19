@@ -34,8 +34,11 @@ DT_EMIT = 0.07
 FPS = 24
 
 AUDIO_FS = 44100
+# Repo root (this file lives in _posts/_doppler_assets/). Use any MP3 you like.
+_REPO_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 SIREN_MP3 = os.path.join(
-    os.path.dirname(os.path.abspath(__file__)),
+    _REPO_ROOT,
+    "scripts",
     "(MP3) DRIETONIGE SIRENE NEDERLANDSE AMBULANCE.mp3",
 )
 

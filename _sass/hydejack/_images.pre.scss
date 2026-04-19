@@ -26,13 +26,24 @@
 }
 
 // <<< link
+// Rouge/Jekyll code blocks use <figure class="highlight"> — do not center them
+// or highlighted Python loses left alignment and looks “indented wrong”.
 figure, .figure {
-  @extend .faded, .fine, .centered;
+  @extend .faded, .fine;
   margin-bottom: 2rem;
 
   > *:first-child {
     margin-bottom: 1rem;
   }
+}
+
+figure:not(.highlight),
+.figure {
+  @extend .centered;
+}
+
+figure.highlight {
+  text-align: left;
 }
 
 .highlighter-rouge + .figure {
