@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "A Short Note on the Doppler Effect"
-subtitle: "What you hear when an ambulance surpasses the speed of light"
+subtitle: "What do you hear when an ambulance drives towards you faster than the speed of sound?"
 categories: [science]
 tags: [physics, waves]
 ---
