@@ -8,7 +8,7 @@ tags: [physics, waves]
 
 I was wandering around the forest when I thought about the following scenario:
 
-Say an ambulance drives towards you, we know (or just looked up) what happens when the ambulance drives towards you.
+Say an ambulance drives towards you, we know (or just looked up) what happens to the pitch of the sounds. 
 
 The sounds speeds up (or the frequency increases). Now what happens when an ambulance comes towards you faster than the speed of sound?
 
