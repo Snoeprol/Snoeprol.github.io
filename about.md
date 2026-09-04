@@ -5,29 +5,40 @@ permalink: /about/
 more_posts: posts.md
 sidebar: true
 order: 1
+selected_projects:
+  - _projects/vidimus.md
+  - _projects/datafirst-logistics.md
 ---
 
-## Hello
+## Hi, I'm Mario
 
-I am **Mario van Rooij**. I work as a **data scientist at [ABN AMRO]**, and I studied at the **[University of Amsterdam]**, where I leaned heavily on computation and software. If you want the longer version—projects, timeline, and contact—see my **[resume]**.
+I'm a data scientist and builder based in Amsterdam. By day I work as a **data scientist at
+[ABN AMRO]**; the rest of the time I build things that turn messy real-world data into
+something a person can actually trust and act on — usually maps, satellites, and routes.
 
-This site is a small public notebook: notes on code, data, and whatever I am learning slowly enough to write down.
+Lately that has meant two products that are live and in use: **[Vidimus]**, a public,
+open-source evidence record for EU deforestation compliance that reads satellite archives
+plot by plot, and **[DataFirst Logistics]**, a route-optimization platform that quietly
+saves transport companies 15–30% of their driven kilometres. A couple of smaller things are
+below too.
+
+<!--projects-->
+
+*See [all projects] for the rest, or the [résumé] for the timeline and contact.*
 
 ***
 
-<!--posts_list-->
+## How I like to work
 
-***
+Two small principles I keep coming back to.
 
-## Memento mori
+**Say what you did, not what you hope.** The tools I build are careful to distinguish *we
+looked and found nothing* from *we could not look* — because collapsing those two is how
+software quietly lies. I try to hold my own claims to the same standard.
 
-_A short reminder, not a gloomy one._
-
-> We do not get unlimited days. It helps to notice the good ones, and the people in them, while they are here.
-
-## Work without the sneer
-
-Cynicism makes every task feel heavier than it needs to be. You still have to do the work; you only choose whether to drag it. I like [this piece][original post] on building habits and systems so that the boring parts cost less willpower over time.
+**Work without the sneer.** Cynicism makes every task heavier than it needs to be. You still
+have to do the work; you only choose whether to drag it. I like [this piece][original post]
+on building systems so the boring parts cost less willpower over time.
 
 ***
 
@@ -38,9 +49,12 @@ Built with [Jekyll] and the [Hydejack] theme. Maintained from Amsterdam.
 <!--author-->
 
 <!-- Links -->
+[Vidimus]: https://vidimusearth.com
+[DataFirst Logistics]: https://datafirstlogistics.com
+[all projects]: /projects/
+[résumé]: /resume/
 [ABN AMRO]: https://www.abnamro.com/
 [University of Amsterdam]: https://www.uva.nl/
-[resume]: /resume/
 [original post]: http://blog.vivekmahbubani.com/2007/03/work-hard-to-be-lazy.html
 [Jekyll]: https://jekyllrb.com/
 [Hydejack]: https://hydejack.com

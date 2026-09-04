@@ -27,11 +27,15 @@ title:                 Mario van Rooij
 
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
-description:           >
+description:            >
+  Mario van Rooij — data scientist in Amsterdam. I build products that turn
+  satellites, maps and messy data into something you can trust: Vidimus (EU
+  deforestation evidence) and DataFirst Logistics (route optimization).
   Data Scientist at ABN AMRO.
 
 # A shorter description for the sidebar.
-tagline:               >
+tagline:                >
+  Data scientist &amp; builder. Satellites, maps, and routes.
   Data Scientist at ABN AMRO.
 
 # A list of keywords for your blog
@@ -51,7 +55,7 @@ author:
   social:
     linkedin:          daein-lee-3b6ba9139
     github:            snoeprol
-    email:             nariovanrooij@hotmail.com
+    email:             mariovanrooij@hotmail.com
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
